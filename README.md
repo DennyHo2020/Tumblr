@@ -1,8 +1,8 @@
-# Lab 2 - *Name of App Here*
+# Tumblr
 
-**Name of your app** is a photo browsing app app using the [The Tumblr API](https://www.tumblr.com/docs/en/api/v2#posts).
+Tumblr is a photo browsing app app using the [The Tumblr API](https://www.tumblr.com/docs/en/api/v2#posts).
 
-Time spent: **X** hours spent in total
+Time spent: 4 hours spent in total
 
 ## User Stories
 
@@ -29,6 +29,8 @@ Please list two areas of the assignment you'd like to **discuss further with you
 
 Here's a walkthrough of implemented user stories:
 
+![tumblr_2](https://user-images.githubusercontent.com/31720526/45924514-dd3eb600-beb6-11e8-91e3-5df96ea9fa9b.gif)
+
 ![tumblr](https://user-images.githubusercontent.com/31720526/45924509-c39d6e80-beb6-11e8-86e2-6fc819f1deea.gif)
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
@@ -39,7 +41,7 @@ Describe any challenges encountered while building the app.
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2018] [Denny Ho]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
