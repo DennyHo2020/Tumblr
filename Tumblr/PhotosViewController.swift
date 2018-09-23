@@ -7,14 +7,15 @@
 //
 
 import UIKit
+import AlamofireImage
 
 class PhotosViewController: UIViewController, UITableViewDataSource {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         photoTableView.dataSource = self
+        photoTableView.rowHeight = 250
         retrieveTumblrAPIData()
-        // Do any additional setup after loading the view.
     }
     var posts: [[String: Any]] = []
     @IBOutlet weak var photoTableView: UITableView!
@@ -26,21 +27,18 @@ class PhotosViewController: UIViewController, UITableViewDataSource {
         session.configuration.requestCachePolicy = .reloadIgnoringLocalCacheData
         let task = session.dataTask(with: url) { (data, response, error) in
             if let error = error {
+                let alertView = UIAlertView(title: "Networking Error", message: "The internet connection appears to be offline", delegate: self as? UIAlertViewDelegate, cancelButtonTitle: "OK")
+                alertView.show()
                 print(error.localizedDescription)
             } else if let data = data,
                 let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] {
                 print(dataDictionary)
-                
-                // TODO: Get the posts and store in posts property
                 // Get the dictionary from the response key
                 let responseDictionary = dataDictionary["response"] as! [String: Any]
                 // Store the returned array of dictionaries in our posts property
                 self.posts = responseDictionary["posts"] as! [[String: Any]]
-                // TODO: Reload the table view
-                for post in self.posts {
-                    let s = post["type"] as! String
-                    print(s)
-                }
+                self.photoTableView.reloadData()
+
             }
         }
         task.resume()
@@ -50,9 +48,7 @@ class PhotosViewController: UIViewController, UITableViewDataSource {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    // Data Source Protocol Methods
-    
+
     // How many cells should I return?
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return posts.count
@@ -63,18 +59,32 @@ class PhotosViewController: UIViewController, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "PhotoCell", for: indexPath) as! PhotoCell
         
         // Configure YourCustomCell using the outlets that you've defined.
+        let post = posts[indexPath.row]
+        if let photos = post["photos"] as? [[String: Any]] {
         
+            let photo = photos[0]
+            let originalSize = photo["original_size"] as! [String: Any]
+            let urlString = originalSize["url"] as! String
+            let imageURL = URL(string: urlString)
+             cell.PostImage.af_setImage(withURL: imageURL!)
+        }
         return cell
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+        var photoViewController = segue.destination as! PhotoDetailsViewController
+        let cell = sender as! UITableViewCell
+        let indexPath = photoTableView.indexPath(for: cell)!
+        let post = posts[indexPath.row]
+        if let photos = post["photos"] as? [[String: Any]] {
+            
+            let photo = photos[0]
+            let originalSize = photo["original_size"] as! [String: Any]
+            let urlString = originalSize["url"] as! String
+            let imageURL = URL(string: urlString)
+            photoViewController.imageURL = imageURL
+        }
+        
 
+    }
+    
 }

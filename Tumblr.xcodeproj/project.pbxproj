@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D317DFD2152E8F700B689BA /* PhotoDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D317DFC2152E8F700B689BA /* PhotoDetailsViewController.swift */; };
 		3DA6635C2149948400FDB433 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA6635B2149948400FDB433 /* AppDelegate.swift */; };
 		3DA663612149948400FDB433 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DA6635F2149948400FDB433 /* Main.storyboard */; };
 		3DA663632149948900FDB433 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DA663622149948900FDB433 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D317DFC2152E8F700B689BA /* PhotoDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailsViewController.swift; sourceTree = "<group>"; };
 		3DA663582149948400FDB433 /* Tumblr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tumblr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DA6635B2149948400FDB433 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DA663602149948400FDB433 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				3DA6636D2149A99000FDB433 /* PhotosViewController.swift */,
 				3DA6636F2149B39E00FDB433 /* PhotoCell.swift */,
 				3DA6635F2149948400FDB433 /* Main.storyboard */,
+				3D317DFC2152E8F700B689BA /* PhotoDetailsViewController.swift */,
 				3DA6635B2149948400FDB433 /* AppDelegate.swift */,
 				3DA663622149948900FDB433 /* Assets.xcassets */,
 				3DA663642149948900FDB433 /* LaunchScreen.storyboard */,
@@ -205,6 +208,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D317DFD2152E8F700B689BA /* PhotoDetailsViewController.swift in Sources */,
 				3DA663702149B39E00FDB433 /* PhotoCell.swift in Sources */,
 				3DA6635C2149948400FDB433 /* AppDelegate.swift in Sources */,
 				3DA6636E2149A99000FDB433 /* PhotosViewController.swift in Sources */,
