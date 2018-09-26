@@ -2,7 +2,7 @@
 
 Tumblr is a photo browsing app using the [The Tumblr API](https://www.tumblr.com/docs/en/api/v2#posts).
 
-Time spent: **X** hours spent in total
+Time spent: 10 hours spent in total
 
 ## User Stories
 
@@ -39,12 +39,6 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 Describe any challenges encountered while building the app.
 
-# Tumblr
-
-Tumblr is a photo browsing app app using the [The Tumblr API](https://www.tumblr.com/docs/en/api/v2#posts).
-
-Time spent: 4 hours spent in total
-
 ## User Stories
 
 The following **required** user stories are complete:
@@ -72,46 +66,6 @@ Here's a walkthrough of implemented user stories:
 
 ![tumblr_2](https://user-images.githubusercontent.com/31720526/45924514-dd3eb600-beb6-11e8-91e3-5df96ea9fa9b.gif)
 
-
-GIF created with [LiceCap](http://www.cockos.com/licecap/).
-
-## Notes
-
-Describe any challenges encountered while building the app.
-
-# Tumblr
-
-Tumblr is a movies app displaying box office and top rental DVDs using [The Movie Database API](http://docs.themoviedb.apiary.io/#).
-
-Time spent: 5 hours spent in total
-
-## User Stories
-
-The following **required** user stories are complete:
-
-- The following screens use AutoLayout to adapt to various orientations and screen sizes
-   - [ ] Movie feed view (+3pt)
-   - [ ] Detail view (+2pt)
-
-The following **stretch** user stories are implemented:
-
-- [ ] Dynamic Height Cells (+1)
-- [ ] Collection View AutoLayout (+2)
-
-The following **additional** user stories are implemented:
-
-- [ ] List anything else that you can get done to improve the app functionality! (+1-3pts)
-
-Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
-
-1.
-2.
-
-## Video Walkthrough
-
-Here's a walkthrough of implemented user stories:
-
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
