@@ -2,8 +2,6 @@
 
 Tumblr is a photo browsing app using the [The Tumblr API](https://www.tumblr.com/docs/en/api/v2#posts).
 
-Time spent: 10 hours spent in total
-
 ## Features
 
 - Scroll through a feed of images returned from the Tumblr API 
@@ -16,10 +14,7 @@ Time spent: 10 hours spent in total
 
 Here's a walkthrough of implemented user stories:
 
-![tumblr](https://user-images.githubusercontent.com/31720526/45924509-c39d6e80-beb6-11e8-86e2-6fc819f1deea.gif)
-
 ![tumblr_2](https://user-images.githubusercontent.com/31720526/45924514-dd3eb600-beb6-11e8-91e3-5df96ea9fa9b.gif)
-
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
