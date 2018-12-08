@@ -4,28 +4,13 @@ Tumblr is a photo browsing app using the [The Tumblr API](https://www.tumblr.com
 
 Time spent: 10 hours spent in total
 
-## User Stories
+## Features
 
-The following **required** user stories are complete:
-
-- [X] User can scroll through a feed of images returned from the Tumblr API (5pts)
-
-The following **stretch** user stories are implemented:
-
-- [X] User sees an alert when there's a networking error (+1pt)
-- [ ] While poster is being fetched, user see's a placeholder image (+1pt)
-- [ ] User sees image transition for images coming from network, not when it is loaded from cache (+1pt)
-- [ ] Customize the selection effect of the cell (+1pt)
-
-The following **additional** user stories are implemented:
-
-- [X] Launch Screen
-- [X] Loading State
-
-Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
-
-1.
-2.
+- Scroll through a feed of images returned from the Tumblr API 
+- Sees an alert when there's a networking error 
+- Launch Screen
+- Loading State
+- Tab an image to view a larger image in a detail view
 
 ## Video Walkthrough
 
@@ -33,45 +18,11 @@ Here's a walkthrough of implemented user stories:
 
 ![tumblr](https://user-images.githubusercontent.com/31720526/45924509-c39d6e80-beb6-11e8-86e2-6fc819f1deea.gif)
 
-GIF created with [LiceCap](http://www.cockos.com/licecap/).
-
-## Notes
-
-Describe any challenges encountered while building the app.
-
-## User Stories
-
-The following **required** user stories are complete:
-
-- [X] User can tab an image to view a larger image in a detail view (5pts)
-
-The following **stretch** user stories are implemented:
-
-- [ ] Add Avatar and Publish Dates (+2pt)
-- [ ] Zoomable Photo View (+2pt)
-- [ ] Infinite Scrolling (+2pt)
-
-The following **additional** user stories are implemented:
-
-- [ ] List anything else that you can get done to improve the app functionality! (+1-3pts)
-
-Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
-
-1. Avatar
-2. Scrolling
-
-## Video Walkthrough
-
-Here's a walkthrough of implemented user stories:
-
 ![tumblr_2](https://user-images.githubusercontent.com/31720526/45924514-dd3eb600-beb6-11e8-91e3-5df96ea9fa9b.gif)
 
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
-## Notes
-
-Describe any challenges encountered while building the app.
 
 ## License
 
